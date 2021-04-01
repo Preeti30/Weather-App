@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
+*{
+    padding:0;
+    margin:0;
+    font-family:"Jost" sans-serif
+}
+
+body{
+    background: #f3f2ef;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width:100vw;
+    font-family:"Jost" sans-serif
+}
+
+html{
+    font-size:100%;
+    height: 100%;
+    background:#eee;
+}
+.box{
+    width:25vw;
+    height:60vh;
+    border-radius:0.5rem;
+    border:3px solid black;
+    background-color: lightskyblue;
+}
+
+.inputData{
+    width:100%;
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputField{
+    width:50%;
+    margin:auto;
+    border-radius: 5rem;
+    padding:1rem 1rem;
+    outline:none;
+    font-size:1.5rem
+}
+
+.errorMsg{
+    text-align:center;
+    font-size:2rem;
+    margin:2rem auto
+}
+
+.wave{
+    opacity:0.3;
+    position:absolute;
+    top:120%;
+    left:50%;
+    background: white;
+    width:50rem;
+    height:50rem;
+    margin-left: -25rem;
+    margin-left: -20rem;
+    transform-origin: 50% 48%;
+    border-radius:48%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1
+}
+.wave-three{
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity:0.2
+}
+.wave-two{
+    animation: drift 7000ms infinite linear;
+    z-index: 3 !important;
+    opacity:0.1
+}
+.info{
+    padding-top: 10rem;
+}
